@@ -62,13 +62,13 @@ languages:
           name: 首頁
           url: /
           weight: 1
-        - identifier: archive
+        - identifier: archives
           name: 彙整
-          url: /archives/
+          url: /zh-tw/archives/
           weight: 2
         - identifier: about
           name: 關於
-          url: /about/
+          url: /zh-tw/about/
           weight: 3
 
   en:
@@ -86,7 +86,7 @@ languages:
           name: Home
           url: /en/
           weight: 1
-        - identifier: archive
+        - identifier: archives
           name: Archive
           url: /en/archives/
           weight: 2

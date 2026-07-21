@@ -2,7 +2,6 @@
 title: "關於"
 date: 2026-07-21
 draft: false
-url: /about/
 ---
 
 # 關於每日 AI 新聞

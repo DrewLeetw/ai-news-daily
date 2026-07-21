@@ -8,7 +8,7 @@ draft: false
 
 A daily curated digest of the most important AI news, automatically generated and published every morning at 10:00 AM (Asia/Taipei).
 
-👉 **[View latest posts →](/posts/)** | **[Browse archive](/archives/)**
+👉 **[View latest posts →](/en/posts/)** | **[Browse archive](/en/archives/)**
 
 ---
 
@@ -28,4 +28,4 @@ All summaries are written in **bilingual format** (English + 繁體中文) for e
 
 ## Latest Updates
 
-See the [posts section](/posts/) for the most recent digests, or browse the [full archive](/archives/) to look back at any past day.
+See the [posts section](/en/posts/) for the most recent digests, or browse the [full archive](/en/archives/) to look back at any past day.
