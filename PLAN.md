@@ -5,12 +5,19 @@
 
 ## Status: Phase 1 done, Phase 2 not started
 
-### ✅ Phase 1 — 靜態網站上線 (done 2026-07-21)
+### ✅ Phase 1 — Static site live (done 2026-07-21, refined in follow-ups)
 - Hugo site with PaperMod theme, bilingual (zh-tw + en)
 - GitHub repo: https://github.com/DrewLeetw/ai-news-daily (public)
 - GitHub Pages deployed at: https://drewleetw.github.io/ai-news-daily/
 - 2 manual posts: 2026-07-20, 2026-07-21
 - GitHub Actions workflow auto-deploys on push to main (uses OIDC, no PAT needed)
+
+### ✅ Home + Archives redesign (done 2026-07-21)
+- **Home (`/`, `/zh-tw/`, `/en/`)** — renders latest daily digest inline (8 stories with h3 titles + summary content). User clicks h3 to read full story on its anchor; clicks "查看完整內容" link for the dedicated post page with full Sources section.
+- **Archives (`/zh-tw/archives/`, `/en/archives/`)** — lists all daily digests as clickable links (sorted by date desc). Click a date → goes to that day's home-like rendering.
+- **Individual post (`/zh-tw/posts/<date>/`)** — unchanged, full content + Sources section.
+
+Key insight: Hugo v0.84+ multilingual quirk — `/zh-tw/` is treated as a section page (Kind=section), not a home page. `.Site.RegularPages` is empty in that context. We use `.Language.Lang` for root home detection and `.Section` for the zh-tw/en distinction.
 
 ### ⏳ Phase 2 — 自動排程 (next)
 - Hermes cron job: schedule "0 10 * * *" (daily 10:00 Asia/Taipei)

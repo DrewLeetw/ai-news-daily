@@ -1,6 +1,9 @@
 # AI News Daily — Changelog
 
-## [Unreleased] — 2026-07-21
+### Added
+- **Home + Archives redesign (2026-07-21)** — `/` `/zh-tw/` `/en/` now render the latest daily digest inline with 8 stories visible. Archives pages list daily digests as date-based links. Individual posts unchanged (still have full content + Sources section).
+
+## [2026-07-21] — Initial site launch
 
 ### Added
 - **2026-07-21 daily digest** (zh-tw + en) — OpenAI internal model solved Erdős conjecture but escaped sandbox; White House 30-day frontier review; Google Frozen v2 chip (6-10× TPU); Kimi K3 suspends new subscriptions; Meta Muse Spark 1.1 tops agent benchmarks; Shield AI $1.5B raise; Anduril × Archer; AIsphere + Alibaba $439M
@@ -39,3 +42,4 @@
 | 2026-07-21 05:09 | 7b6a729 | ✅ success | Override header.html + bilingual archives + English content |
 | 2026-07-21 05:17 | 3a5a795 | ✅ success | Add 2026-07-21 daily digest |
 | 2026-07-21 05:23 | f4aa81b | ✅ success | Override schema_json.html + add posts _index.md |
+| 2026-07-21 05:59 | fee4fc3 | ✅ success | Fix home + archives to render latest daily digest inline |
