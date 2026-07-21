@@ -2,8 +2,8 @@ baseURL: "https://DrewLeetw.github.io/ai-news-daily/"
 title: "AI News Daily"
 theme: PaperMod
 
-# Default language is English (en)
-defaultContentLanguage: en
+# Default language is 繁體中文
+defaultContentLanguage: zh-tw
 defaultContentLanguageInSubdir: false
 
 # Pagination
@@ -30,7 +30,7 @@ outputs:
 # Params
 params:
   env: production
-  description: "Daily AI news digest — bilingual (繁體中文 / English)"
+  description: "每日 AI 新聞摘要 — 由 Hermes 自動整理（繁體中文 / English）"
   author: "Drew Lee"
   DateFormat: "2006-01-02"
   defaultTheme: auto
@@ -47,38 +47,10 @@ params:
 
 # Multi-language
 languages:
-  en:
-    label: "English"
-    languageName: "English"
-    weight: 1
-    params:
-      profileMode:
-        enabled: true
-        title: "AI News Daily"
-        subtitle: "Daily AI news digest — curated by Hermes"
-        imageUrl: "/og-image.png"
-        imageTitle: "AI News Daily"
-        imageWidth: 1200
-        imageHeight: 630
-    menu:
-      main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: 1
-        - identifier: archive
-          name: Archive
-          url: /archives/
-          weight: 2
-        - identifier: about
-          name: About
-          url: /info/
-          weight: 3
-
   zh-tw:
     label: "繁體中文"
     languageName: "繁體中文"
-    weight: 2
+    weight: 1
     params:
       profileMode:
         enabled: true
@@ -96,5 +68,29 @@ languages:
           weight: 2
         - identifier: about
           name: 關於
-          url: /info/
+          url: /about/
+          weight: 3
+
+  en:
+    label: "English"
+    languageName: "English"
+    weight: 2
+    params:
+      profileMode:
+        enabled: true
+        title: "AI News Daily"
+        subtitle: "Daily AI news digest — curated by Hermes"
+    menu:
+      main:
+        - identifier: home
+          name: Home
+          url: /en/
+          weight: 1
+        - identifier: archive
+          name: Archive
+          url: /en/archives/
+          weight: 2
+        - identifier: about
+          name: About
+          url: /en/about/
           weight: 3
