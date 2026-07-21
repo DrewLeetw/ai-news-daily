@@ -40,6 +40,9 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   disableSpecial1stPost: true
+  # Archive settings (PaperMod)
+  # mainSections not used by us (see layouts/archives.html override)
+  ShowAllPagesInArchive: false
   mainSections:
     - posts
   assets:
@@ -53,9 +56,7 @@ languages:
     weight: 1
     params:
       profileMode:
-        enabled: true
-        title: "每日 AI 新聞"
-        subtitle: "由 Hermes 整理的每日 AI 新聞摘要"
+        enabled: false
     menu:
       main:
         - identifier: home
@@ -77,9 +78,7 @@ languages:
     weight: 2
     params:
       profileMode:
-        enabled: true
-        title: "AI News Daily"
-        subtitle: "Daily AI news digest — curated by Hermes"
+        enabled: false
     menu:
       main:
         - identifier: home
